@@ -1,0 +1,4 @@
+Copyright (C) 2018 George Wu <uiharu@buaa.edu.cn>
+
+The text documents are licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License: https://creativecommons.org/licenses/by-sa/4.0/legalcode.
+The code snippets are licensed under the MIT License. See "License-MIT.txt" provided with this file.
