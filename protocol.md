@@ -159,7 +159,7 @@ Examples:
    "error": {
        "code": -32001,
        "message": "A New Error"
-   }
+   },
    "id": "id2"
 }]
 ```
