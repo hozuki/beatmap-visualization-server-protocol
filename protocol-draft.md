@@ -1,4 +1,4 @@
-# Specification for Beatmap Visualization Server Protocol
+# Specification for Beatmap Visualization Server Protocol (Draft)
 
 <!-- TOC depthFrom:2 orderedList:false -->
 
@@ -13,11 +13,21 @@
     - [Notification Message](#notification-message)
     - [Specific Requests and Notifications](#specific-requests-and-notifications)
 - [Methods](#methods)
-    - [`simInitialize`](#siminitialize)
-    - [`simInitialized`](#siminitialized)
-    - [`simExit`](#simexit)
-    - [`simExited`](#simexited)
-    - [`edExit`](#edexit)
+    - [`general/simInitialize`](#generalsiminitialize)
+    - [`general/simInitialized`](#generalsiminitialized)
+    - [`general/simExit`](#generalsimexit)
+    - [`general/simExited`](#generalsimexited)
+    - [`general/edExit`](#generaledexit)
+    - [`preview/play`](#previewplay)
+    - [`preview/playing`](#previewplaying)
+    - [`preview/tick`](#previewtick)
+    - [`preview/pause`](#previewpause)
+    - [`preview/paused`](#previewpaused)
+    - [`preview/stop`](#previewstop)
+    - [`preview/stopped`](#previewstopped)
+    - [`preview/getPlaybackState`](#previewgetplaybackstate)
+    - [`preview/gotoTime`](#previewgototime)
+    - [`edit/reload`](#editreload)
 
 <!-- /TOC -->
 
@@ -28,6 +38,8 @@ TBD
 Unlike LSP, relations of editors and simulators in BVSP are more closed to peer-to-peer.
 
 Like debugging software, simulators can run in standalone mode, or be launched by editors. In the first case, there is no need to connect to an editor. In the second case, the editor always starts a server, the simulator connects to it, then starts its own server: the editor-simulator communication works in a duplex way.
+
+The editor and the simulator are two standalone applications, which implies simulator applications must provide a commandline parameter that accepts a port number. One editor instance is only required to communicate with one simulator instance.
 
 TBD: life cycle graph of an editor and a simulator here.
 
@@ -197,24 +209,65 @@ Requests and notifications whose methods start with `$/` are messages which are 
 | `preview/stopped` | Notification | Previewing | S→E | TBD |
 | `preview/getPlaybackState` | Request | Previewing | E→S→E | TBD |
 | `preview/gotoTime` | Request | Previewing | E→S→E | TBD |
+| `edit/reload` | Request | Editing | E→S→E | TBD |
 | TBD | TBD | TBD | TBD | TBD |
 
-### `simInitialize`
+### `general/simInitialize`
 
 TBD
 
-### `simInitialized`
+### `general/simInitialized`
 
 TBD
 
-### `simExit`
+### `general/simExit`
 
 TBD
 
-### `simExited`
+### `general/simExited`
 
 TBD
 
-### `edExit`
+### `general/edExit`
+
+TBD
+
+### `preview/play`
+
+TBD
+
+### `preview/playing`
+
+TBD
+
+### `preview/tick`
+
+TBD
+
+### `preview/pause`
+
+TBD
+
+### `preview/paused`
+
+TBD
+
+### `preview/stop`
+
+TBD
+
+### `preview/stopped`
+
+TBD
+
+### `preview/getPlaybackState`
+
+TBD
+
+### `preview/gotoTime`
+
+TBD
+
+### `edit/reload`
 
 TBD

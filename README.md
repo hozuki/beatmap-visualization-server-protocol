@@ -10,15 +10,13 @@ Inspired by Microsoft's [Language Server Protocol](https://github.com/Microsoft/
 
 ## Specification
 
-See [here](protocol.md).
+See [here](protocol-draft.md).
 
-The specification is in a very early stage. Comments, suggestions, discussions, and other forms of contributions are all welcome!
+The specification is a draft in a very early stage. Comments, criticisms, suggestions, discussions, and other forms of contributions are all welcome!
 
-## About Beatmap Formats
+## Proposals
 
-TBD
-
-Due to the complexity of rhythm games, it is also not possible to have a common exchange format. At the time of writing, the most common format is BMS, a format for [Beatmania](https://en.wikipedia.org/wiki/Beatmania). However, this format abstracts the play area as several tracks, and accepts tap and hold (turn) inputs, which is not always the case in other rhythm games. The reason why BMS is popular is that in non-core rhythm games (e.g. for general population), you only have to tap the input device (e.g. screen), like [LLSIF](https://lovelive-sif.bushimo.jp/). So those games only need to support a subset of BMS. For more complicated games, like [osu!](https://osu.ppy.sh/), [CGSS](http://cinderella.idolmaster.jp/sl-stage/), [Arcaea](https://arcaea.lowiro.com/), or [Cytus](https://www.rayark.com/g/cytus/), there are featured notes that cannot be represented in standard BMS.
+[List of Proposals](proposals)
 
 ## License
 
