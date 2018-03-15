@@ -187,7 +187,7 @@ interface NotificationMessage extends Message {
 
 ### Specific Requests and Notifications
 
-Requests and notifications whose methods start with `$/` are messages which are protocol implementation dependent and might not be implementable in all clients or servers. For example, asynchronous actions (LSP's `$/cancelRequest`), game-specific methods (`$/game/cgss/preview/gotoMeasure`), etc.
+Requests and notifications whose methods start with `$/` are messages which are protocol implementation-dependent and might not be implementable or supported in all editors or simulators. For example, asynchronous actions (LSP's `$/cancelRequest`), game-specific methods (`$/game/cgss/preview/gotoMeasure`), etc.
 
 ## Methods
 
