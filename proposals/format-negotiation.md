@@ -1,4 +1,4 @@
-# Proposal: Format Negotation
+# Proposal: Format Negotiation
 
 ## Introduction
 
