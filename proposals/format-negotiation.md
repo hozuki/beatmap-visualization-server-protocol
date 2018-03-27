@@ -65,7 +65,7 @@ Format ID should be unique in the context of a game. An example list (of Starlig
 | Deleste TXT | `txt` |
 | ... | ... |
 
-Given a format ID, there can be several versions in the version list which is not empty. However, in the selected format, the exact version is also determined. The selected version is, but not necessarily needs to be, the highest version that both the editor and the simulator support.
+Given a format ID, there can be several versions in the version list which is not empty. However, in the selected format, the exact version is also determined by exact string equality check (case-sensitive). The selected version is, but not necessarily needs to be, the highest version that both the editor and the simulator support.
 
 The list of game IDs and format IDs should be maintained separately for maximum backward compatibility, and subjecting to appending new records.
 
